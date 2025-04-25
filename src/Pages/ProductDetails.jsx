@@ -263,7 +263,7 @@ const ProductDetails = () => {
                   Confirm Order
                 </button>
               </div>
-              <ToastContainer/>
+              <ToastContainer />
             </form>
           </div>
         </div>
