@@ -124,11 +124,7 @@ const ProductDetails = () => {
   }
 
   const Toast = () => {
-    toast("Your Order is Confirmed!", {
-      autoClose: 3000,
-      pauseOnHover: true,
-      closeOnClick: false,
-    });
+    toast("Your Order is Confirmed!");
   };
 
   return (
@@ -267,17 +263,7 @@ const ProductDetails = () => {
                   Confirm Order
                 </button>
               </div>
-              <ToastContainer
-                position="top-right"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-              />
+              <ToastContainer/>
             </form>
           </div>
         </div>
