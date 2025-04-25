@@ -14,7 +14,14 @@ const Products = () => {
     dispatch(fetchProducts());
   }, [dispatch]);
 
-  if (isLoading) return <div className="flex justify-center"><p><FaSpinner className="lg:text-5xl md:text-3xl text-2xl mt-10"/></p></div>;
+  if (isLoading)
+    return (
+      <div className="flex justify-center">
+        <p>
+          <FaSpinner className="lg:text-5xl md:text-3xl text-2xl mt-10" />
+        </p>
+      </div>
+    );
   if (isError)
     return (
       <p className="text-center mt-10 text-red-500">Something went wrong!</p>

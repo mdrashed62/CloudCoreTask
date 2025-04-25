@@ -124,7 +124,11 @@ const ProductDetails = () => {
   }
 
   const Toast = () => {
-    toast("Your Order is Confirmed!");
+    toast("Your Order is Confirmed!", {
+      autoClose: 3000,
+      pauseOnHover: true,
+      closeOnClick: false,
+    });
   };
 
   return (

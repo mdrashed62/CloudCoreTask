@@ -9,7 +9,7 @@ const SingleProducts = ({ product }) => {
   const handleDetails = () => {
     navigate(`/productDetails/${product.unique_id}`);
   };
-  
+
   return (
     <div className="mx-auto lg:w-full lg:h-full space-y-3 border-t-1 rounded-md">
       <div className="relative">
