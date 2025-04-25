@@ -125,7 +125,7 @@ const ProductDetails = () => {
   }
 
   const Toast = () => {
-    toast("Your Order Confirmed!");
+    toast("Your Order is Confirmed!");
   };
 
   return (
