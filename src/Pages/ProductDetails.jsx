@@ -124,9 +124,7 @@ const ProductDetails = () => {
   }
 
   const Toast = () => {
-    toast("Your Order is Confirmed!", {
-      autoClose: 3000,
-    });
+    toast("Your Order is Confirmed!");
   };
 
   return (
@@ -159,11 +157,15 @@ const ProductDetails = () => {
             </div>
             <div className="flex justify-between">
               <p>
-                <span className="lg:text-xl lg:font-medium opacity-60">Created_at:</span>{" "}
+                <span className="lg:text-xl lg:font-medium opacity-60">
+                  Created_at:
+                </span>{" "}
                 {product.created_at?.substring(0, 10)}
               </p>
               <p>
-                <span className="lg:text-xl lg:font-medium opacity-60">Updated_at:</span>{" "}
+                <span className="lg:text-xl lg:font-medium opacity-60">
+                  Updated_at:
+                </span>{" "}
                 {product.updated_at?.substring(0, 10)}
               </p>
             </div>
@@ -261,7 +263,17 @@ const ProductDetails = () => {
                   Confirm Order
                 </button>
               </div>
-              <ToastContainer />
+              <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
             </form>
           </div>
         </div>
