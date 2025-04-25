@@ -98,7 +98,6 @@ const ProductDetails = () => {
 
   const handleCancel = () => {
     setIsModalOpen(false);
-
     setFormData((prevData) => ({
       ...prevData,
       s_product_qty: "1",
@@ -125,7 +124,9 @@ const ProductDetails = () => {
   }
 
   const Toast = () => {
-    toast("Your Order is Confirmed!");
+    toast("Your Order is Confirmed!", {
+      autoClose: 3000,
+    });
   };
 
   return (
